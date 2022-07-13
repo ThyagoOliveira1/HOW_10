@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team Maker Aplication</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="CSS/reset.css" rel="stylesheet">
+        <link href="CSS/base.css" rel="stylesheet">
+        <link href="CSS/cabecalho.css" rel="stylesheet">
+        <link href="CSS/sobre.css" rel="stylesheet">
+        <link href="CSS/temaker.css" rel="stylesheet">
+        <link href="CSS/times.css" rel="stylesheet">
+        <link href="CSS/mapa.css" rel="stylesheet">
+        <link href="CSS/patchnotes.css" rel="stylesheet">
+        <link href="CSS/rodape.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Navegation Bar-->
+        <header class="cabecalho container">
+            <nav class="cabecalho_navegacao">
+                <ul>
+                    <li class="cabecalho_link"><a href="#sobre">Sobre</a></li>
+                    <li class="cabecalho_link"><a href="#teamMaker">Team Maker</a></li>
+                    <li class="cabecalho_link"><a href="#patch_Notes">Patch Notes</a></li>
+                    <li class="cabecalho_link"><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Main Content-->
+        <main>
+            <!--Section Sobre-->
+            <section class="sobre container" id="sobre">
+                <h1 class="sobre_titulo">Monte times de uma maneira rápida e moderna!</h1>
+                <p class="sobre_texto">Através do Team Maker, você conseguirá montar times para jogos da categoria eSporst para jogar com seus amigos.</p>
+            </section>
+            <!--Section Team Maker-->
+            <section class="montarTimes container" id="teamMaker">
+                <h2 class="montarTimes_titulo">Montar Times</h2>
+                <p class="montarTimes_texto">Preencha os campos do formulário com os nomes dos jogadores que irão participar da partida:</p>
+                <form class="montarTimes_form">
+                    <div class="montarTimes_grupo">
+                        <div class="montarTimes_input">
+                            <label for="jogador1" class="montarTimes_input-label">Jogador 01: </label>
+                            <input type="text" id="jogador1" class="montarTimes_input-1" data-form-input required>
+                        </div>
+                        <div class="montarTimes_input">
+                            <label for="jogador2" class="montarTimes_input-label">Jogador 02: </label>
+                            <input type="text" id="jogador2" class="montarTimes_input-1" data-form-input required>
+                        </div>
+                        <div class="montarTimes_input">
+                            <label for="jogador3" class="montarTimes_input-label">Jogador 03: </label>
+                            <input type="text" id="jogador3" class="montarTimes_input-1" data-form-input required>
+                        </div>
+                        <div class="montarTimes_input">
+                            <label for="jogador4" class="montarTimes_input-label">Jogador 04: </label>
+                            <input type="text" id="jogador4" class="montarTimes_input-1" data-form-input required>
+                        </div>
+                        <div class="montarTimes_input">
+                            <label for="jogador5" class="montarTimes_input-label">Jogador 05: </label>
+                            <input type="text" id="jogador5" class="montarTimes_input-1" data-form-input required>
+                        </div>
+                    </div>
+                    <div class="montarTimes_grupo">
+                        <div class="montarTimes_input">
+                            <label for="jogador6" class="montarTimes_input-label">Jogador 06: </label>
+                            <input type="text" id="jogador6" class="montarTimes_input-1" data-form-input required>
+                        </div>
+                        <div class="montarTimes_input">
+                            <label for="jogador7" class="montarTimes_input-label">Jogador 07: </label>
+                            <input type="text" id="jogador7" class="montarTimes_input-1" data-form-input required>
+                        </div>
+                        <div class="montarTimes_input">
+                            <label for="jogador8" class="montarTimes_input-label">Jogador 08: </label>
+                            <input type="text" id="jogador8" class="montarTimes_input-1" data-form-input required>
+                        </div>
+                        <div class="montarTimes_input">
+                            <label for="jogador9" class="montarTimes_input-label">Jogador 09: </label>
+                            <input type="text" id="jogador9" class="montarTimes_input-1" data-form-input required>
+                        </div>
+                        <div class="montarTimes_input">
+                            <label for="jogador10" class="montarTimes_input-label">Jogador 10: </label>
+                            <input type="text" id="jogador10" class="montarTimes_input-1" data-form-input required>
+                        </div>
+                    </div>
+                    <div class="montarTimes_botoes">
+                        <div class="montarTimes_botao">
+                            <input type="submit" value="Gerar Times" class="montarTimes_botao-gerar" data-form-submit>
+                            <input type="reset" value="Limpar Campos" class="montarTimes_botao-limpar">
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <!--Section Times-->
+            <section class="times container">
+                <h2 class="times_titulo">Times</h2>
+                <h3 class="timeAtacantes_titulo" data-timeAtacantes>Atacantes</h3>
+                
+                <h3 class="timeDefensores_titulo" data-timeDefensores>Defensores</h3>
+                
+                <!--Div Mapa-->
+                <div class="mapa container" data-mapa>
+                    
+                </div>
+            </section>
+            <!--Section Pacth Notes-->
+            <section class="patchNotes container" id="patch_Notes">
+                <h2 class="patchNotes_titulo">Patch Notes</h2>
+                <ul class="patchNotes_cartoes">
+                    <li class="cartao cartao--valorant">
+                        <h3 class="cartao_titulo">Valorant</h3>
+                        <article class="cartao_conteudo">
+                            <p class="cartao_texto">Verifique as últimas atualizações feita pela Riot Games no jogo!</em></p>
+                            <a href="https://playvalorant.com/pt-br/news/" class="cartao_botao botao">Verificar Patch Note</a>
+                        </article>
+                    </li>
+                    <li class="cartao cartao--lol">
+                        <h3 class="cartao_titulo">League of Legends</h3>
+                        <article class="cartao_conteudo">
+                            <p class="cartao_texto">Verifique as últimas atualizações feita pela Riot Games no jogo!</em></p>
+                            <a href="https://www.leagueoflegends.com/pt-br/news/tags/patch-notes/" class="cartao_botao botao">Verificar Patch Note</a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer class="rodape container" id="contato">
+            <h2 class="rodape_titulo">Desenvolvido por:</h2>
+            <div class="desenvolvedor">
+                <h3 class="dev_nome">Aléxia Oliveira</h3>
+                <h3 class="dev_nome">Ânderson Guimarães</h3>
+                <h3 class="dev_nome">Daniel Corrêa</h3>
+                <h3 class="dev_nome">Thyago Oliveira</h3>
+            </div>
+        </footer>
+        <script src="./JS/app.js"></script>
+    </body>
+</html>
